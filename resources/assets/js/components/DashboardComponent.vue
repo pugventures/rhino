@@ -1,19 +1,21 @@
 <template>
-    <div>
-        {{ this.$root.$data.user }}
+    <div id="dashboard">
+        <dashboardHeader></dashboardHeader>
+        <navigation></navigation>
     </div>
 </template>
 
 <script>
     export default {
         data: function() {
-            return {}
+            return {
+                navSection: null,
+                dashboardComponent: null
+            }
         },
-        created(){
-            console.log('Dashboard has started.');
-        },
-        mounted() {
-            console.log('Dashboard is ready.')
-          }
+        components: {
+            'dashboardHeader': require('./DashboardHeaderComponent.vue'),
+            'navigation': require('./Navigation/NavigationComponent.vue')
+        }
     }
 </script>

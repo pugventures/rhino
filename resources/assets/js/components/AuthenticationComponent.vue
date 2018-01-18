@@ -52,12 +52,6 @@
                     console.log(response.body.error);
                 });
             }
-        },
-        created(){
-            console.log('Authentication has started.');
-        },
-        mounted() {
-            console.log('Authentication is ready.')
-          }
+        }
     }
 </script>

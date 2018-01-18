@@ -12,12 +12,6 @@
         <link href="css/amanda.css" rel="stylesheet" type="text/css">
         
         <title>RhinoIO v1 - Pug Ventures, LLC</title>
-        
-        <!--<script>
-            window.Laravel = <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-            ]); ?>
-        </script>-->
     </head>
     <body>
         <div id="RhinoIO">
