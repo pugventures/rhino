@@ -25,7 +25,7 @@
                         </a>
                     </li><!-- nav-item -->
                     <navigationProducts @navClicked="resetNav"></navigationProducts>
-                    <navigationAdministration @navClicked="resetNav"></navigationAdministration>
+                    <navigationAdministration @navClicked="resetNav" @panelChosen="resetPanels"></navigationAdministration>
                 </ul>
             </div><!-- #mainMenu -->
         </div><!-- tab-content -->
@@ -44,6 +44,9 @@
         methods: {
             resetNav: function() {
                 $('.nav-link').removeClass('active show-sub');
+            },
+            resetPanels: function() {
+                console.log('resetting panels');
             }
         }
     }

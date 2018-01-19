@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::prefix('api')->group(function () {
     Route::post('/authenticate', 'AuthenticationController@authenticate');
+    
+    Route::prefix('users')->group(function () {
+        Route::get('/all', 'UserController@getAll');
+    });
 });

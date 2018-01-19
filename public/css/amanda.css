@@ -59775,3 +59775,7 @@ a.hover-white-8:focus {
   color: red;
 }
 
+thead.bg-info th {
+  color: #FFFFFF;
+}
+

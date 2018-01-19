@@ -5,7 +5,7 @@
             <span class="pl-2">Administration</span>
         </a>
         <ul v-if="this.$root.$data.navSection == 'administration'" class="nav-sub" style='display:block;'>
-            <li class="nav-item"><a href="" class="nav-link">Users</a></li>
+            <li v-on:click="showUsersPanel()" class="nav-item"><a href="#" class="nav-link">Users</a></li>
         </ul>
     </li><!-- nav-item -->
 </template>
@@ -24,6 +24,10 @@
                 $('#navgiationAdministrationComponent').addClass('active show-sub');
                 
                 this.$root.$data.navSection = 'administration';
+            },
+            showUsersPanel: function() {
+                this.$emit('panelChosen');
+                this.$root.$data.panel = 'users';
             }
         }
     }

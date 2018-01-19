@@ -2,6 +2,7 @@
     <div id="dashboard">
         <dashboardHeader></dashboardHeader>
         <navigation></navigation>
+        <mainPanel></mainPanel>
     </div>
 </template>
 
@@ -15,7 +16,8 @@
         },
         components: {
             'dashboardHeader': require('./DashboardHeaderComponent.vue'),
-            'navigation': require('./Navigation/NavigationComponent.vue')
+            'navigation': require('../Navigation/NavigationComponent.vue'),
+            'mainPanel': require('../MainPanelComponent.vue')
         }
     }
 </script>

@@ -23,13 +23,14 @@ Vue.http.interceptors.push(function(request, next) {
 });*/
 
 const authentication = require('./components/AuthenticationComponent.vue');
-const dashboard = require('./components/DashboardComponent.vue');
+const dashboard = require('./components/Dashboard/DashboardComponent.vue');
 
 const app = new Vue({
     el: '#RhinoIO',
     data: {
         user: null,
-        navSection: null
+        navSection: null,
+        panel: 'dashboard'
     },
     components: {
         'authentication': authentication,
